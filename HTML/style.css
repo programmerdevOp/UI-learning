@@ -178,9 +178,81 @@ nav a {
     border: 2px solid #3a3a3a;
     border-radius: 10px;
     background-color: #1e1e13;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .item img{
     height: 48px;
     width: 48px;
+    filter: invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%) contrast(101%);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    /* padding:10px */
+}
+
+.item:hover {
+    transform: scale(1.1);
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* education */
+
+#education {
+    /* padding: 20px; */
+    margin-top: 40px;
+    /* border: 2px solid white; */
+}
+
+/* .edtech {
+     position: relative; 
+    padding-left: 20px;
+} */
+
+.year{
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+}
+
+.degree{
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.college {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+
+.work{
+    color: #a0a0a0;
+}
+
+.edfirst {
+    margin-bottom: 30px;
+    padding-left: 25px;
+    position: relative;
+    /* position: relative; */
+}
+
+.goal {
+    height: 15px;
+    width: 15px;
+    /* color: #FFBF00; */
+    /* background-color: #FFBF00; */
+    border: 3px solid #FFBF00;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    /* padding-left: 25px; */
 }
