@@ -29,7 +29,6 @@ body {
 }
 
 .main-content {
-    height: 90vh;
     background-color: #2a2a2a;
     border: 1px solid #3a3a3a;
     border-radius: 16px;
@@ -120,6 +119,7 @@ body {
     border-bottom: 2px solid #3a3a3a;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    /* border: 2px solid white; */
 }
 
 nav{
@@ -138,4 +138,49 @@ nav a {
 
 .active , nav a:hover {
     color: #FFBF00;
+}
+
+/* about me */
+
+.heading {
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.line {
+    width: 60px;
+    height: 5px;
+    background-color: #FFBF00;
+    margin-bottom: 15px;
+}
+
+.content {
+    text-align: justify;
+    color: #a0a0a0;
+}
+
+#about {
+    margin-bottom: 40px;
+    /* border: 2px solid white; */
+}
+
+/* skills */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+}
+
+.item {
+    padding: 20px;
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    background-color: #1e1e13;
+}
+
+.item img{
+    height: 48px;
+    width: 48px;
 }
