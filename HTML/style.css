@@ -209,10 +209,10 @@ nav a {
     /* border: 2px solid white; */
 }
 
-/* .edtech {
-     position: relative; 
-    padding-left: 20px;
-} */
+.edtech {
+    position: relative; 
+    /* padding-left: 20px; */
+}
 
 .year{
     font-size: 0.9rem;
@@ -252,7 +252,17 @@ nav a {
     border: 3px solid #FFBF00;
     border-radius: 50%;
     position: absolute;
-    top: 0px;
+    top: 5px;
     left:0px;
     /* padding-left: 25px; */
+    z-index: 2;
+}
+
+.liner {
+    position: absolute;
+    width: 2px;
+    top: 0px;
+    bottom: 0px;
+    left: 5px;
+    border: 2px solid #3a3a3a;
 }
