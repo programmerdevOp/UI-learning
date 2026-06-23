@@ -26,6 +26,8 @@ body {
     border: 1px solid #3a3a3a;
     border-radius: 16px;
     padding: 40px;
+    position: sticky;
+    top: 40px;
 }
 
 .main-content {
@@ -284,6 +286,12 @@ nav a {
     border-radius: 12px;
     border:1px solid #3a3a3a;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card {
@@ -310,4 +318,34 @@ nav a {
     border-radius: 5px;
     font-size: 0.75rem;
     margin-right: 5px;
+}
+
+@media screen and (max-width:1200px) {
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    #navigation nav {
+        /* Adjust nav for smaller screens */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .sidebar{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
 }
