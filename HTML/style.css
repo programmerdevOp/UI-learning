@@ -266,3 +266,48 @@ nav a {
     left: 5px;
     border: 2px solid #3a3a3a;
 }
+
+/* portfolio section */
+
+.project-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.project {
+    /* border: 1px solid white; */
+    /* padding:5px; */
+
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border:1px solid #3a3a3a;
+    overflow: hidden;
+}
+
+.card {
+    padding: 20px;
+}
+
+.card p {
+    color: #a0a0a0;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card span {
+    background-color: rgba(255, 191, 0, 0.1);
+    color: #FFBF00;
+    padding:  4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+}
